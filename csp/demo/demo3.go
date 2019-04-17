@@ -6,6 +6,7 @@ import (
 	"runtime"
 )
 
+// 退出通知机制
 func GenerateInt(done chan struct{}) chan int {
 	ch := make(chan int)
 	go func() {
