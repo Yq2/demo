@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f72bb221-474f-45d5-945f-325efee3dd27" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/csp/demo/demo10/demo10.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csp/demo/demo9.go" beforeDir="false" afterPath="$PROJECT_DIR$/csp/demo/demo9/demo9.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,14 +25,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="go" value="4570" />
-          <entry key="txt" value="38" />
+          <entry key="go" value="4596" />
+          <entry key="txt" value="54" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Go" value="4570" />
-          <entry key="PLAIN_TEXT" value="38" />
+          <entry key="Go" value="4596" />
+          <entry key="PLAIN_TEXT" value="54" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -59,8 +57,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/csp/demo/demo10/demo10.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="50" column="11" selection-start-line="50" selection-start-column="11" selection-end-line="50" selection-end-column="11" />
+            <state relative-caret-position="182">
+              <caret line="27" column="13" lean-forward="true" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
               <folding>
                 <element signature="e#14#39#0" expanded="true" />
               </folding>
@@ -288,7 +286,8 @@
     <MESSAGE value="goroutine简单使用" />
     <MESSAGE value="goroutine 通知退出机制" />
     <MESSAGE value="goroutine 并发范式" />
-    <option name="LAST_COMMIT_MESSAGE" value="goroutine 并发范式" />
+    <MESSAGE value="goroutine 固定worker工作池" />
+    <option name="LAST_COMMIT_MESSAGE" value="goroutine 固定worker工作池" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/../../tidwall/gjson/gjson.go">
@@ -449,8 +448,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/csp/demo/demo10/demo10.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="50" column="11" selection-start-line="50" selection-start-column="11" selection-end-line="50" selection-end-column="11" />
+        <state relative-caret-position="182">
+          <caret line="27" column="13" lean-forward="true" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
           <folding>
             <element signature="e#14#39#0" expanded="true" />
           </folding>
