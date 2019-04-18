@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f72bb221-474f-45d5-945f-325efee3dd27" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/csp/demo/demo4.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/csp/demo/demo5.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/csp/demo/demo6.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/csp/demo/demo7.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csp/demo/demo9.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csp/demo/demo3.go" beforeDir="false" afterPath="$PROJECT_DIR$/csp/demo/demo3.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,35 +15,35 @@
     <session id="1128741087">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.open.time.6" value="2" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="go" value="2599" />
-          <entry key="txt" value="31" />
+          <entry key="go" value="4046" />
+          <entry key="txt" value="38" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Go" value="2599" />
-          <entry key="PLAIN_TEXT" value="31" />
+          <entry key="Go" value="4046" />
+          <entry key="PLAIN_TEXT" value="38" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="go" value="24" />
+          <entry key="go" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Go" value="24" />
+          <entry key="Go" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages">
@@ -60,12 +56,12 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/csp/demo/demo7.go">
+        <entry file="file://$PROJECT_DIR$/csp/demo/demo9.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="47" column="20" lean-forward="true" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="20" />
+            <state relative-caret-position="-174">
+              <caret line="45" column="56" lean-forward="true" selection-start-line="45" selection-start-column="56" selection-end-line="45" selection-end-column="56" />
               <folding>
-                <element signature="e#14#44#0" expanded="true" />
+                <element signature="e#14#69#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -100,6 +96,8 @@
         <option value="$PROJECT_DIR$/csp/demo/demo5.go" />
         <option value="$PROJECT_DIR$/csp/demo/demo6.go" />
         <option value="$PROJECT_DIR$/csp/demo/demo7.go" />
+        <option value="$PROJECT_DIR$/csp/demo/demo8.go" />
+        <option value="$PROJECT_DIR$/csp/demo/demo9.go" />
       </list>
     </option>
   </component>
@@ -179,25 +177,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build demo7.go">
-    <configuration name="go build demo3.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="demo" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/csp/demo/demo3.go" />
-      <package value="github.com/Yq2/demo" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build demo4.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="demo" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/csp/demo/demo4.go" />
-      <package value="github.com/Yq2/demo" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Go Build.go build demo9.go">
     <configuration name="go build demo5.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="demo" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -225,20 +205,38 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
+    <configuration name="go build demo8.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/csp/demo/demo8.go" />
+      <package value="github.com/Yq2/demo" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build demo9.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/csp/demo/demo9.go" />
+      <package value="github.com/Yq2/demo" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Go Build.go build demo3.go" />
-      <item itemvalue="Go Build.go build demo4.go" />
       <item itemvalue="Go Build.go build demo5.go" />
       <item itemvalue="Go Build.go build demo6.go" />
       <item itemvalue="Go Build.go build demo7.go" />
+      <item itemvalue="Go Build.go build demo8.go" />
+      <item itemvalue="Go Build.go build demo9.go" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build demo9.go" />
+        <item itemvalue="Go Build.go build demo8.go" />
         <item itemvalue="Go Build.go build demo7.go" />
         <item itemvalue="Go Build.go build demo6.go" />
         <item itemvalue="Go Build.go build demo5.go" />
-        <item itemvalue="Go Build.go build demo4.go" />
-        <item itemvalue="Go Build.go build demo3.go" />
       </list>
     </recent_temporary>
   </component>
@@ -251,7 +249,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49947917" visible="true" weight="0.27966103" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49947917" visible="true" weight="0.24258475" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3516949" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -278,7 +276,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="goroutine简单使用" />
     <MESSAGE value="goroutine 通知退出机制" />
-    <option name="LAST_COMMIT_MESSAGE" value="goroutine 通知退出机制" />
+    <MESSAGE value="goroutine 并发范式" />
+    <option name="LAST_COMMIT_MESSAGE" value="goroutine 并发范式" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/../../tidwall/gjson/gjson.go">
@@ -415,10 +414,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/csp/demo/demo7.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="47" column="20" lean-forward="true" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="20" />
+        <state relative-caret-position="361">
+          <caret line="44" column="31" lean-forward="true" selection-start-line="44" selection-start-column="31" selection-end-line="44" selection-end-column="31" />
           <folding>
             <element signature="e#14#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/csp/demo/demo8.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="12" lean-forward="true" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/csp/demo/demo9.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-174">
+          <caret line="45" column="56" lean-forward="true" selection-start-line="45" selection-start-column="56" selection-end-line="45" selection-end-column="56" />
+          <folding>
+            <element signature="e#14#69#0" expanded="true" />
           </folding>
         </state>
       </provider>
