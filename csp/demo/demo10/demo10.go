@@ -45,6 +45,7 @@ func main() {
 	DistributeTask(taskchan, workers, done)
 
 	// 获取各个goroutine处理完成任务的通知，并关闭结果通道
+	// CloseResult是阻塞的，需要等所有go完全退出后才算执行完
 	go CloseResult(done, resultchan, workers)
 
 	// 通过结果通道获取结果并汇总
