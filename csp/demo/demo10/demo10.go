@@ -36,12 +36,15 @@ func main() {
 	resultchan := make(chan int, 10)
 
 	// worker信号通道
+	// 主要用来同步控制goroutine
 	done := make(chan struct{}, 10)
 
 	// 初始化task的goroutine，计算100个自然数之和
+	// 该方法是阻塞的
 	go InitTask(taskchan, resultchan, 100)
 
 	// 分发任务到NUMBERS个goroutine池
+	// 推荐在主goroutine里面开启多个工作goroutine
 	DistributeTask(taskchan, workers, done)
 
 	// 获取各个goroutine处理完成任务的通知，并关闭结果通道
