@@ -21,7 +21,7 @@ func main() {
 	if err != nil {
 		fmt.Println("error:", err)
 	}
-	fmt.Printf("%+v", animals)
+	fmt.Printf("%+v\n", animals)
 
 	var f interface{}
 	b := []byte(`{"Name":"Wednesday","Age":6,"Parents":["Gomez","Morticia"]}`)
@@ -41,4 +41,5 @@ func main() {
 			}
 		}
 	}
+
 }

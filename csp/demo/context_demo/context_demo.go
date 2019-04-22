@@ -60,7 +60,9 @@ func main() {
 	time.Sleep(10 * time.Second)
 
 	// 显示调用work1 的cancel方法通知其退出
+	fmt.Println("read cacel")
 	cancel()
+	fmt.Println("caceled")
 
 	// 等待work1 打印退出通知
 	time.Sleep(5 * time.Second)

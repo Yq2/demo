@@ -1,4 +1,4 @@
-package inject_demo1
+package main
 
 import (
 	"fmt"
