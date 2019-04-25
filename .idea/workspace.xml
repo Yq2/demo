@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f72bb221-474f-45d5-945f-325efee3dd27" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/csp/demo/slice_demo/slice_demo1.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csp/demo/defer_demo/defer_demo1.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csp/demo/defer_demo/defer_demo2.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/csp/demo/slice_demo/slice_demo2.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csp/demo/demo1.go" beforeDir="false" afterPath="$PROJECT_DIR$/csp/demo/demo1.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csp/demo/demo3.go" beforeDir="false" afterPath="$PROJECT_DIR$/csp/demo/demo3.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csp/demo/demo7.go" beforeDir="false" afterPath="$PROJECT_DIR$/csp/demo/demo7.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,13 +15,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/csp/demo/slice_demo/slice_demo1.go">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="475">
-              <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="30" selection-end-column="66" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/csp/demo/slice_demo/slice_demo2.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="293">
+              <caret line="20" column="29" lean-forward="true" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
               <folding>
-                <element signature="e#14#42#0" expanded="true" />
+                <element signature="e#14#45#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -70,6 +78,9 @@
         <option value="$PROJECT_DIR$/csp/demo/demo3.go" />
         <option value="$PROJECT_DIR$/csp/demo/demo1.go" />
         <option value="$PROJECT_DIR$/csp/demo/slice_demo/slice_demo1.go" />
+        <option value="$PROJECT_DIR$/csp/demo/defer_demo/defer_demo1.go" />
+        <option value="$PROJECT_DIR$/csp/demo/defer_demo/defer_demo2.go" />
+        <option value="$PROJECT_DIR$/csp/demo/slice_demo/slice_demo2.go" />
       </list>
     </option>
   </component>
@@ -158,39 +169,30 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build slice_demo1.go">
+  <component name="RunManager" selected="Go Build.go build slice_demo2.go">
+    <configuration name="go build defer_demo1.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/csp/demo/defer_demo/defer_demo1.go" />
+      <package value="github.com/Yq2/demo" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build defer_demo2.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/csp/demo/defer_demo/defer_demo2.go" />
+      <package value="github.com/Yq2/demo" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build demo1.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="demo" />
       <working_directory value="$PROJECT_DIR$/" />
       <kind value="FILE" />
       <filePath value="$PROJECT_DIR$/csp/demo/demo1.go" />
-      <package value="github.com/Yq2/demo" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build demo2.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="demo" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/csp/demo/demo2.go" />
-      <package value="github.com/Yq2/demo" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build demo3.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="demo" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/csp/demo/demo3.go" />
-      <package value="github.com/Yq2/demo" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build demo4.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="demo" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/csp/demo/demo4.go" />
       <package value="github.com/Yq2/demo" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
@@ -204,26 +206,34 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
+    <configuration name="go build slice_demo2.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/csp/demo/slice_demo/slice_demo2.go" />
+      <package value="github.com/Yq2/demo" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Go Build.go build demo1.go" />
-      <item itemvalue="Go Build.go build demo2.go" />
-      <item itemvalue="Go Build.go build demo3.go" />
-      <item itemvalue="Go Build.go build demo4.go" />
       <item itemvalue="Go Build.go build slice_demo1.go" />
+      <item itemvalue="Go Build.go build defer_demo1.go" />
+      <item itemvalue="Go Build.go build defer_demo2.go" />
+      <item itemvalue="Go Build.go build slice_demo2.go" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build slice_demo2.go" />
+        <item itemvalue="Go Build.go build defer_demo2.go" />
+        <item itemvalue="Go Build.go build defer_demo1.go" />
         <item itemvalue="Go Build.go build slice_demo1.go" />
         <item itemvalue="Go Build.go build demo1.go" />
-        <item itemvalue="Go Build.go build demo2.go" />
-        <item itemvalue="Go Build.go build demo3.go" />
-        <item itemvalue="Go Build.go build demo4.go" />
       </list>
     </recent_temporary>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="32" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1484375" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -259,7 +269,8 @@
     <MESSAGE value="future 模式" />
     <MESSAGE value="context 用法实例" />
     <MESSAGE value="inject 依赖注入" />
-    <option name="LAST_COMMIT_MESSAGE" value="inject 依赖注入" />
+    <MESSAGE value="slice 陷阱" />
+    <option name="LAST_COMMIT_MESSAGE" value="slice 陷阱" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://D:/Program Files/Go/src/builtin/builtin.go" />
@@ -540,12 +551,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/csp/demo/defer_demo/defer_demo2.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/csp/demo/defer_demo/defer_demo1.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="559">
+          <caret line="35" column="28" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/csp/demo/slice_demo/slice_demo1.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="475">
-          <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="30" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/csp/demo/slice_demo/slice_demo2.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="20" column="29" lean-forward="true" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
           <folding>
-            <element signature="e#14#42#0" expanded="true" />
+            <element signature="e#14#45#0" expanded="true" />
           </folding>
         </state>
       </provider>
