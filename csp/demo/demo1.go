@@ -10,10 +10,10 @@ func main() {
 	ci := make(chan int, 100)
 	go func(i chan struct{}, j chan int) {
 		for i := 0; i < 10; i++ {
-			ci <- i
+			j <- i
 		}
-		close(ci)
-		c <- struct{}{}
+		close(j)
+		i <- struct{}{}
 	}(c, ci)
 	fmt.Println("NumGoroutine=", runtime.NumGoroutine())
 	<-c

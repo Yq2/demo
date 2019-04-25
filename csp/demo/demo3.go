@@ -32,5 +32,4 @@ func main() {
 	fmt.Println("ch: ", <-ch)
 	fmt.Println("ch: ", <-ch)
 	fmt.Println("NumGoroutine=", runtime.NumGoroutine())
-
 }

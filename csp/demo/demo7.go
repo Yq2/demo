@@ -68,7 +68,7 @@ func main() {
 	ch := GenerateIntFanIn(done)
 
 	// 获取生成器资源
-	for i := 0; i < 5; i++ {
+	for i := 0; i < 50; i++ {
 		fmt.Println("<-ch=", <-ch)
 	}
 
