@@ -2,10 +2,12 @@ package main
 
 import (
 	"encoding/json"
+	"fmt"
 	"github.com/Yq2/demo/csp/demo/channel/worker"
 	"io"
 	"log"
 	"net/http"
+	"time"
 )
 
 const (
@@ -44,4 +46,12 @@ func main() {
 
 	log.Fatal(http.ListenAndServe(":8080", nil))
 
+}
+
+func run(service *worker.Service) {
+	for i := 0; i < 90000; i++ {
+		service.AddJob(fmt.Sprintf("任务:%v", i))
+	}
+	time.Sleep(10 * time.Second)
+	service.Stop()
 }
