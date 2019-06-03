@@ -3,7 +3,7 @@ package worker
 import "sync"
 
 type Service struct {
-	workers *WorkerPool
+	workers *Pool
 	jobs    chan interface{}
 	maxJobs int
 	wg      sync.WaitGroup
