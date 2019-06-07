@@ -23,6 +23,7 @@ func main() {
 	for i := 0; i < 10; i++ {
 		go worker(cancel)
 	}
-	time.Sleep(time.Second)
+	time.Sleep(time.Second * 3)
 	close(cancel)
+	time.Sleep(time.Second * 3)
 }
