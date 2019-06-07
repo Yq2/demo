@@ -23,27 +23,27 @@ func (t *task) do() {
 
 func main() {
 	// 创建任务通道
-	taskchan := make(chan task, 10)
+	taskPool := make(chan task, 10)
 	// 创建结果通道
-	resultchan := make(chan int, 10)
+	resultPool := make(chan int, 10)
 
 	// wait用于同步等待任务的执行
 	wait := &sync.WaitGroup{}
 
 	// 初始化task的goroutine，计算100个自然数之和
-	go InitTask(taskchan, resultchan, 100)
+	go InitTask(taskPool, resultPool, 100)
 
 	// 每个task 启动一个go处理
-	go DistributeTask(taskchan, wait, resultchan)
+	go DistributeTask(taskPool, wait, resultPool)
 
 	// 通过结果通道获取结果并汇总
-	sum := ProcessResult(resultchan)
+	sum := ProcessResult(resultPool)
 	fmt.Println("sum =", sum)
 
 }
 
 // 构建task并写入task通道
-func InitTask(taskchan chan<- task, r chan int, p int) {
+func InitTask(resultPool chan<- task, r chan int, p int) {
 	qu := p / 10
 	mod := p % 10
 	high := qu * 10
@@ -55,7 +55,7 @@ func InitTask(taskchan chan<- task, r chan int, p int) {
 			end:    e,
 			result: r,
 		}
-		taskchan <- tsk
+		resultPool <- tsk
 	}
 	if mod != 0 {
 		tsk := task{
@@ -63,15 +63,15 @@ func InitTask(taskchan chan<- task, r chan int, p int) {
 			end:    p,
 			result: r,
 		}
-		taskchan <- tsk
+		resultPool <- tsk
 	}
-	close(taskchan)
+	close(resultPool)
 }
 
 // 读取task chan ，每个task 启动一个worker goroutine 进行处理
 // 等待每个task运行完，关闭结果通道
-func DistributeTask(taskchan <-chan task, wait *sync.WaitGroup, result chan int) {
-	for v := range taskchan {
+func DistributeTask(resultPool <-chan task, wait *sync.WaitGroup, result chan int) {
+	for v := range resultPool {
 		wait.Add(1)
 		go ProcessTask(v, wait)
 	}
@@ -86,9 +86,9 @@ func ProcessTask(t task, wait *sync.WaitGroup) {
 }
 
 // 读取结果通道，汇总结果
-func ProcessResult(resultchan chan int) int {
+func ProcessResult(resultPool chan int) int {
 	sum := 0
-	for r := range resultchan {
+	for r := range resultPool {
 		sum += r
 	}
 	return sum

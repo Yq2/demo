@@ -39,7 +39,7 @@ func workWithValue(ctx context.Context, name string) {
 
 func main() {
 
-	// 使用context.Background() 构建一个WithCancel类型的上下文
+	// 使用 context.Background() 构建一个WithCancel类型的上下文
 	ctxa, cancel := context.WithCancel(context.Background())
 
 	// work 模拟运行并检测前端的退出通知
@@ -60,9 +60,7 @@ func main() {
 	time.Sleep(10 * time.Second)
 
 	// 显示调用work1 的cancel方法通知其退出
-	fmt.Println("read cacel")
 	cancel()
-	fmt.Println("caceled")
 
 	// 等待work1 打印退出通知
 	time.Sleep(5 * time.Second)
