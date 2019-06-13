@@ -70,19 +70,19 @@ func InitTask(resultPool chan<- task, r chan int, p int) {
 
 // 读取task chan ，每个task 启动一个worker goroutine 进行处理
 // 等待每个task运行完，关闭结果通道
-func DistributeTask(resultPool <-chan task, wait *sync.WaitGroup, result chan int) {
+func DistributeTask(resultPool <-chan task, wg *sync.WaitGroup, result chan int) {
 	for v := range resultPool {
-		wait.Add(1)
-		go ProcessTask(v, wait)
+		wg.Add(1)
+		go ProcessTask(v, wg)
 	}
-	wait.Wait()
+	wg.Wait()
 	close(result)
 }
 
 // goutine 处理具体工作，并将处理结果发送给结果通道
-func ProcessTask(t task, wait *sync.WaitGroup) {
+func ProcessTask(t task, wg *sync.WaitGroup) {
 	t.do()
-	wait.Done()
+	wg.Done()
 }
 
 // 读取结果通道，汇总结果
