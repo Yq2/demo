@@ -17,7 +17,7 @@ func main() {
 
 	sf := sonyflake.NewSonyflake(settings)
 
-	for i := 0; i < 3; i++ {
+	for i := 0; i < 30; i++ {
 		id, err := sf.NextID()
 		if err != nil {
 			fmt.Println(err)

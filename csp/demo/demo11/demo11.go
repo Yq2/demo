@@ -25,7 +25,7 @@ func main() {
 	q := query{make(chan string, 1), make(chan string, 1)}
 
 	// 执行query
-	go exeQuery(q)
+	exeQuery(q)
 
 	// 发送参数
 	q.sql <- "select * from table"

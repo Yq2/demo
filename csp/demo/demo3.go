@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"math/rand"
 	"runtime"
+	"time"
 )
 
 // 退出通知机制
@@ -21,6 +22,10 @@ func GenerateInt(done chan struct{}) chan int {
 		close(ch)
 	}()
 	return ch
+}
+
+func init() {
+	rand.Seed(time.Now().UnixNano())
 }
 
 func main() {

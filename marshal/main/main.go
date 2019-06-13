@@ -23,6 +23,25 @@ func main() {
 	}
 	fmt.Printf("%+v\n", animals)
 
+	//var f interface{}
+	//b := []byte(`{"Name":"Wednesday","Age":6,"Parents":["Gomez","Morticia"]}`)
+	//json.Unmarshal(b, &f)
+	//for k, v := range f.(map[string]interface{}) {
+	//	switch vv := v.(type) {
+	//	case string:
+	//		fmt.Println(k, "is string", vv)
+	//	case int:
+	//		fmt.Println(k, "is int ", vv)
+	//	case float64:
+	//		fmt.Println(k, "is float64 ", vv)
+	//	case []interface{}:
+	//		fmt.Println(k, "is array:")
+	//		for i, j := range vv {
+	//			fmt.Println(i, j)
+	//		}
+	//	}
+	//}
+
 	var f interface{}
 	b := []byte(`{"Name":"Wednesday","Age":6,"Parents":["Gomez","Morticia"]}`)
 	json.Unmarshal(b, &f)
@@ -31,11 +50,11 @@ func main() {
 		case string:
 			fmt.Println(k, "is string", vv)
 		case int:
-			fmt.Println(k, "is int ", vv)
+			fmt.Println(k, "is int", vv)
 		case float64:
-			fmt.Println(k, "is float64 ", vv)
+			fmt.Println(k, "is float64", vv)
 		case []interface{}:
-			fmt.Println(k, "is array:")
+			fmt.Println(k, "is array")
 			for i, j := range vv {
 				fmt.Println(i, j)
 			}

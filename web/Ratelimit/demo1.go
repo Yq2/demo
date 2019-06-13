@@ -46,7 +46,7 @@ func main() {
 	}
 
 	go fillToken()
-	go takeAvailable(true)
+	go takeAvailable(false)
 
 	time.Sleep(time.Hour)
 }

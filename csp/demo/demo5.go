@@ -41,7 +41,7 @@ func GenerateIntGroup() chan int {
 
 func main() {
 	ch := GenerateIntGroup()
-	for i := 0; i < 100; i++ {
+	for i := 0; i < 10; i++ {
 		fmt.Println("<-ch =", <-ch)
 	}
 }
