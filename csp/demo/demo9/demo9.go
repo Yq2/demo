@@ -43,7 +43,7 @@ func main() {
 }
 
 // 构建task并写入task通道
-func InitTask(resultPool chan<- task, r chan int, p int) {
+func InitTask(taskPool chan<- task, resultPool chan int, p int) {
 	qu := p / 10
 	mod := p % 10
 	high := qu * 10
@@ -53,19 +53,19 @@ func InitTask(resultPool chan<- task, r chan int, p int) {
 		tsk := task{
 			begin:  b,
 			end:    e,
-			result: r,
+			result: resultPool,
 		}
-		resultPool <- tsk
+		taskPool <- tsk
 	}
 	if mod != 0 {
 		tsk := task{
 			begin:  high + 1,
 			end:    p,
-			result: r,
+			result: resultPool,
 		}
-		resultPool <- tsk
+		taskPool <- tsk
 	}
-	close(resultPool)
+	close(taskPool)
 }
 
 // 读取task chan ，每个task 启动一个worker goroutine 进行处理
