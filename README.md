@@ -37,11 +37,17 @@
 3. 有序列表
     
     
-姓名|技能|排行
---|:--:|--:
-刘备|哭|大哥
-关羽|打|二哥
-张飞|骂|三弟
+| 参数 | 类型 | 含义 | 是否必填 |
+| :-----| ----: | :----: | :----: |
+| accessToken | string | 接入token | 选填（不传则自动获取） |
+| deviceTokens | string | 设备token（多个用英文逗号隔开，单次最大100个） | 必填 |
+| messageBusinessId | string | 消息业务ID | 非必填 |
+| messageTitle | string | 消息标题 | 必填 |
+| messageSubTitle | string | 消息副标题 | 非必填 |
+| messageContent | string | 消息正文 | 必填 |
+| messageExtraJson | string | 消息附带参数 消息附带参数 键值为string的map序列化结果，如 "{"param1":"value1","param2":"value2"}" | 非必填 |
+| messageCallBack | string | 消息回调地址 | 非必填 |
+| messageCallBackParam | string | 消息回调附带参数 | 非必填 |   
 
 `var a = 9
 
