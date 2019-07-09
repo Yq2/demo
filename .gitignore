@@ -1,0 +1,39 @@
+# ---> Go
+# Compiled Object files, Static and Dynamic libs (Shared Objects)
+*.o
+*.a
+*.so
+
+# Folders
+_obj
+_test
+
+# Architecture specific extensions/prefixes
+*.[568vq]
+[568vq].out
+
+*.cgo1.go
+*.cgo2.c
+_cgo_defun.c
+_cgo_gotypes.go
+_cgo_export.*
+
+_testmain.go
+
+*.exe
+*.test
+*.prof
+deploypkg/*
+.idea/
+.DS_Store
+.vscode
+debug
+http_sample.exe
+
+# 忽略工程下的proto文件 但是保留.gitkeep 为了让目录提交到远程
+proto/*
+!proto/.gitkeep
+
+# 忽略文件
+nohup.out
+go-push
