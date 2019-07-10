@@ -2,10 +2,11 @@ package main
 
 import (
 	"database/sql"
-	"git.myscrm.cn/golang/common/json"
-	_ "github.com/go-sql-driver/mysql"
 	"log"
 	"time"
+
+	"git.myscrm.cn/golang/common/json"
+	_ "github.com/go-sql-driver/mysql"
 )
 
 func main() {
