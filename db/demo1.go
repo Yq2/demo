@@ -10,6 +10,14 @@ import (
 
 func main() {
 
+	// 驱动注册
+	// 所有驱动都是注册在 sql.drivers
+	// drivers   = make(map[string]driver.Driver)
+	// 所有数据库驱动都要实现sql.Driver接口（该接口只有一个方法Open）
+	// _ "github.com/go-sql-driver/mysql" 通过这种方式注册驱动，实际上会在导入驱动包时执行
+	//func init() {
+	//	sql.Register("postgres", &Driver{})
+	//}
 	db, err := sql.Open("mysql", "root:123456@tcp(47.112.109.72:3306)/YqStudio?charset=utf8&parseTime=True&loc=Local")
 	if err != nil {
 		log.Fatalln(err)
