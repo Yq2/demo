@@ -25,6 +25,6 @@ func main() {
 	inj.Map(23)
 
 	// 函数反转调用
-	inj.Invoke(Format)
+	_, _ = inj.Invoke(Format)
 
 }

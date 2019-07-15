@@ -5,7 +5,7 @@ type Pool struct {
 	pool    chan *Worker
 }
 
-// 构建工作池
+// 构建工作者池
 func NewWorkerPool(maxWorkers int) *Pool {
 	p := &Pool{
 		workers: make([]*Worker, maxWorkers),
@@ -13,7 +13,7 @@ func NewWorkerPool(maxWorkers int) *Pool {
 	}
 	// 初始化工作者
 	for i, _ := range p.workers {
-		worker := NewWorker(0)
+		worker := NewWorker(maxWorkers)
 		p.workers[i] = worker
 		p.pool <- worker
 	}

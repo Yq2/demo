@@ -15,5 +15,6 @@ func main() {
 		}()
 	}
 	// 阻塞main
+	// all goroutines are asleep - deadlock!
 	select {}
 }

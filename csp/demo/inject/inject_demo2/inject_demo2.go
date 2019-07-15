@@ -30,7 +30,7 @@ func main() {
 	inj.Map(23)
 
 	// 实现对struct注入
-	inj.Apply(&s)
+	_ = inj.Apply(&s)
 
 	// 打印结果
 	fmt.Printf("s=%+v\n", s)

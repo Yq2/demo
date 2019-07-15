@@ -7,7 +7,7 @@ import (
 
 type Worker struct {
 	job  chan interface{}
-	quit chan bool
+	quit chan struct{}
 	wg   sync.WaitGroup
 }
 
@@ -15,7 +15,7 @@ type Worker struct {
 func NewWorker(maxJobs int) *Worker {
 	return &Worker{
 		job:  make(chan interface{}, maxJobs),
-		quit: make(chan bool),
+		quit: make(chan struct{}),
 	}
 }
 
@@ -40,7 +40,7 @@ func (w *Worker) Start() {
 
 //关闭任务
 func (w *Worker) Stop() {
-	w.quit <- true
+	w.quit <- struct{}{}
 	w.wg.Wait()
 }
 

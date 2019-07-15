@@ -3,8 +3,8 @@ package worker
 import "sync"
 
 type Service struct {
-	workers *Pool
-	jobs    chan interface{}
+	workers *Pool            // 工作者
+	jobs    chan interface{} // 任务池
 	maxJobs int
 	wg      sync.WaitGroup
 }
@@ -17,7 +17,9 @@ func NewService(maxWorkers, maxJobs int) *Service {
 }
 
 func (p *Service) Start() {
-	p.jobs = make(chan interface{}, p.maxJobs)
+	if p.jobs == nil {
+		p.jobs = make(chan interface{}, p.maxJobs)
+	}
 
 	p.wg.Add(1)
 	p.workers.Start()

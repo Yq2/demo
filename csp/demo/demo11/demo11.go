@@ -28,10 +28,11 @@ func main() {
 	exeQuery(q)
 
 	// 发送参数
+	fmt.Println("send sql ...")
 	q.sql <- "select * from table"
 
 	// 做其他事情
-	time.Sleep(1 * time.Second)
+	time.Sleep(3 * time.Second)
 
 	// 获取结果
 	fmt.Println("<-q.result = ", <-q.result)
