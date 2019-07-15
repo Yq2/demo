@@ -4,7 +4,7 @@ import (
 	"math/rand"
 )
 
-const letterBytesRmndr = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+const letterBytesRmndr = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
 //func main()  {
 //

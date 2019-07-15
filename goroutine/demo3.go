@@ -10,12 +10,13 @@ var done bool = false
 var doneChan = make(chan bool)
 
 func main() {
-	//a()
+	a()
 	b()
 }
 
 func a() {
-	runtime.GOMAXPROCS(1)
+	// 值为1时，主goroutine for循环始终占用CPU 无法让出CPU调度
+	runtime.GOMAXPROCS(2)
 	go func() {
 		msg = " hello world"
 		done = true

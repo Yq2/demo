@@ -18,7 +18,8 @@ func worker(wg *sync.WaitGroup) {
 
 func main() {
 	var wg sync.WaitGroup
-	wg.Add(2)
+	wg.Add(3)
+	go worker(&wg)
 	go worker(&wg)
 	go worker(&wg)
 	wg.Wait()

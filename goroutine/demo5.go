@@ -7,7 +7,7 @@ import (
 
 func returnsErr() error {
 	var p error = nil
-	p = errors.New("error")
+	p = errors.New("error demo")
 	return p
 }
 

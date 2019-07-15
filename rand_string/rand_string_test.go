@@ -8,6 +8,10 @@ import (
 
 const n = 32
 
+func TestMain(m *testing.M) {
+	m.Run()
+}
+
 func init() {
 	rand.Seed(time.Now().UnixNano())
 }

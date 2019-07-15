@@ -24,11 +24,11 @@ func main() {
 	}(ctx)
 
 	for v := range ch {
-		fmt.Println("v= ", v)
 		if v == 5 {
 			cancel()
 			break
 		}
+		fmt.Println("recv= ", v)
 	}
 
 }

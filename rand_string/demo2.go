@@ -11,7 +11,7 @@ import (
 //	fmt.Println(RandStringBytes(32))
 //}
 
-const letterBytes = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+const letterBytes = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
 // 字节替换rune
 // 如果需求是只使用英语字母字符(包括大小写)，那么我们可以使用byte替换rune,

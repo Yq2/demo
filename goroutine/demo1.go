@@ -17,6 +17,6 @@ func main() {
 
 	for {
 		_ = 1 + 1
-		// runtime.Gosched() //让出CPU调度
+		runtime.Gosched() //让出CPU调度
 	}
 }

@@ -5,7 +5,7 @@ import (
 	"time"
 )
 
-const letterBytesImprSrc = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+const letterBytesImprSrc = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
 const (
 	letterIdxBitsImprSrc = 6                           // 6 bits to represent a letter index
 	letterIdxMaskImprSrc = 1<<letterIdxBitsImprSrc - 1 // All 1-bits, as many as letterIdxBits

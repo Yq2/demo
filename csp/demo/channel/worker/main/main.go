@@ -30,11 +30,13 @@ func main() {
 			return
 		}
 		// Job 以JSON格式提交
-		var jobs []interface{}
+		jobs := make([]interface{}, 0)
+		// io.LimitReader 限制Reader的大小
 		err := json.NewDecoder(io.LimitReader(r.Body, MaxLength)).Decode(jobs)
 		if err != nil {
 			w.Header().Set("Content-Type", "application/json;charset")
 			w.WriteHeader(http.StatusBadRequest)
+			return
 		}
 		// 处理任务
 		for job := range jobs {

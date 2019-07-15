@@ -7,7 +7,7 @@ import (
 //func init() {
 //	rand.Seed(time.Now().UnixNano())
 //}
-const letterBytesMask = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+const letterBytesMask = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
 const (
 	letterIdxBits = 6                    // 6 bits to represent a letter index

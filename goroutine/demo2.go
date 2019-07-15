@@ -17,6 +17,6 @@ func main() {
 
 	select {
 	// 或者通过阻塞的方式避免CPU占用
-	// 但是这种方式因为没有可用的channel抛出错误
+	// 但是这种方式因为没有可用的channel抛出错误 all goroutines are asleep - deadlock!
 	}
 }

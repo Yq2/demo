@@ -14,7 +14,7 @@ type (
 
 // 发布对象
 type Publisher struct {
-	m           sync.RWMutex             //读写锁
+	m           sync.RWMutex             // 读写锁
 	buffer      int                      // 订阅队列的缓存大小
 	timeout     time.Duration            // 发布超时时间
 	subscribers map[subscriber]topicFunc // 订阅者消息: 订阅者通道:订阅者的过滤器
@@ -53,8 +53,8 @@ func (p *Publisher) Evict(sub chan interface{}) {
 
 // 发布一个主题
 func (p *Publisher) Publish(v interface{}) {
-	p.m.RLock()
-	defer p.m.RUnlock()
+	//p.m.RLock()
+	//defer p.m.RUnlock()
 	var wg sync.WaitGroup
 	for sub, topic := range p.subscribers {
 		wg.Add(1)
